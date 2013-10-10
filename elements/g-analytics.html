@@ -1,0 +1,31 @@
+<!-- g-analytics definition -->
+<polymer-element name="g-analytics" attributes="account domain">
+  <script>
+    Polymer("g-analytics", {
+      created: function() {
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', this.account]);
+
+        if (this.domain === 'localhost') {
+          // Set domain to none to debug on localhost
+          _gaq.push(['_setDomainName', 'none']);
+        } else {
+          _gaq.push(['_setDomainName', this.domain]);
+        }
+        
+        _gaq.push(['_trackPageview']);
+
+        // Export the _gaq object
+        window._gaq = _gaq;
+
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+        var root = this.createShadowRoot();
+        root.appendChild(ga);
+      }
+    });
+  </script>
+</polymer-element>

@@ -1,0 +1,23 @@
+{
+  "name": "g-analytics",
+  "version": "0.1.0",
+  "authors": [
+    "Rob Dodson <lets.email.rob@gmail.com>"
+  ],
+  "description": "A polymer element for google analytics",
+  "main": "elements/g-analytics.html",
+  "keywords": [
+    "google analytics",
+    "polymer",
+    "web components"
+  ],
+  "license": "MIT",
+  "homepage": "http://robdodson.me",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
