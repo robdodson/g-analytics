@@ -27,9 +27,19 @@ Web Component wrapper for Google Analytics using Polymer.
   ```html
   <g-analytics
     account="UA-XXXXXXXX-1"
-    domain="foo.com">
+    domain="localhost">
   </g-analytics>
   ```
+
+## Options
+
+Attribute  | Options                   | Default             | Description
+---        | ---                       | ---                 | ---
+`account`  | *string*                  | `UA-XXXXXXXX-1`     | Your Google Analytics tracking code
+`domain`   | *string*                  | `localhost`         | Your website domain
+
+> A localhost `domain` will put the element in debug mode so you can test it locally.
+> See Google Analytics [official documentation](https://support.google.com/analytics/).
 
 ## Contributing
 
