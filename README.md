@@ -4,10 +4,6 @@ Web Component wrapper for Google Analytics using Polymer.
 
 > Maintained by [Rob Dodson](https://github.com/robdodson).
 
-## Demo
-
-> [Check it live](http://robdodson.github.io/g-analytics).
-
 ## Usage
 
 1. Import Web Components' polyfill:
